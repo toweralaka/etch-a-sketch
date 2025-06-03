@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid-row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+.grid-div {
+    width: 70px;
+    max-height: auto;
+    border: 1px solid brown;
+    flex: 1;
+}

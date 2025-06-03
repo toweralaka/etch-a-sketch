@@ -1,3 +1,11 @@
+.resize {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    font-weight: bold;
+}
 .container {
     display: flex;
     width: 80%;
@@ -15,6 +23,6 @@
 .grid-div {
     width: 70px;
     max-height: auto;
-    border: 1px solid brown;
+    border: 1px solid rgb(214, 213, 247);
     flex: 1;
 }

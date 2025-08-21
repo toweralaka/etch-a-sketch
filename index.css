@@ -1,3 +1,8 @@
+main {
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+}
 .resize {
     background-color: green;
     color: white;
@@ -8,11 +13,14 @@
 }
 .container {
     display: flex;
-    width: 80%;
+    width: 60%;
     margin: auto;
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 1px 2px rgb(214, 213, 247);
+    border-radius: 8px;
 }
 .grid-row {
     display: flex;
@@ -21,7 +29,7 @@
     justify-content: center;
 }
 .grid-div {
-    width: 70px;
+    width: 50px;
     max-height: auto;
     border: 1px solid rgb(214, 213, 247);
     flex: 1;

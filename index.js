@@ -2,7 +2,6 @@
 let container = document.querySelector(".container");
 let resetBtn = document.querySelector(".resize");
 let initGridSize = 16;
-// let penColor = "#472aa5";
 let penR = 71;
 let penG = 42;
 let penB = 165;
@@ -41,19 +40,15 @@ const createGrid = (gridSize) => {
 
 const getPenColor = () => {
     penB = Math.floor(Math.random() * 255);
-    console.log("pen", penB)
     let theRGB = `rgb(${penR}, ${penG}, ${penB})`
     return theRGB
 }
 const getGridSize = () => {
     let userSize = null;
-    while(userSize == null) {
-        let userChoice = prompt("Number of squares per side (100 max.):");
-        userSize = parseInt(userChoice);
-        if(userSize > 100 || userSize < initGridSize){
-            userSize = null;
-        }
-    }
+    do {
+        let userChoice = prompt(`Number of squares per side (${initGridSize} - 100):`);
+        userSize = userChoice ? parseInt(userChoice) : 0;
+    }while(isNaN(userSize) || userSize > 100 || userSize < initGridSize)
     return userSize
 }
 
